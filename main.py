@@ -10,8 +10,11 @@ class main():
 
   def runStack(self):
     numbers = [1,2,3,4,5,6,7]
+    estaquitababy=Stacks.stack.MyStack()
     for x in numbers:
-      print(Stacks.stack.MyStack().push(x))
+      print(estaquitababy.push(x))
+    for x in numbers:
+      print(estaquitababy.pop())
 
 
 # 0=stack
