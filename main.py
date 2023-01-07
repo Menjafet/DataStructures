@@ -1,5 +1,7 @@
 import Stacks.stack
 import Queue.queue
+#
+import Queue.queueLinked
 
 class main():
 
@@ -10,6 +12,8 @@ class main():
           self.runStack()
         case 1:
           self.runQueue()
+        case 2:
+          self.runLinkedQueue()
 
   def runStack(self):
     numbers = [1,2,3,4,5,6,7]
@@ -26,8 +30,17 @@ class main():
       print(cola.Queue(x))
     for x in numbers:
       print(cola.deQueue())
-
+  
+  def runLinkedQueue(self):
+    numbers = [1,2,3,4,5]
+    cola=Queue.queueLinked.MyLinkedQueue()
+    for x in numbers:
+      print(cola.Queue(x))
+    
+    for x in numbers:
+      print(cola.deQueue())
+    
 
 # 0=stack
 #Test= main(0)
-Test= main(1)
+Test= main(2)
